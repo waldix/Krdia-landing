@@ -1,216 +1,82 @@
-@import 'tailwindcss';
-
-@source "../components/**/*.{js,ts,jsx,tsx,mdx}";
-@source "../app/**/*.{js,ts,jsx,tsx,mdx}";
+@import "tailwindcss";
 
 /**
- * KRDIA - Sistema de Diseño Premium Fintech
- * Tema intercambiable (light/dark) con glassmorphism y degradados metálicos
+ * KRDIA - Sistema de Diseno Premium Fintech
+ * Tema intercambiable (light/dark) con glassmorphism y degradados metalicos
  */
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@layer theme {
-  :root {
-    /* Core Colors - Light Mode */
-    --background: oklch(0.99 0 0);
-    --foreground: oklch(0.15 0.01 270);
-    
-    /* Card & UI Elements */
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.15 0.01 270);
-    
-    /* Popover */
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.15 0.01 270);
-    
-    /* Primary - Metallic Silver/Gray */
-    --primary: oklch(0.45 0.02 270);
-    --primary-foreground: oklch(0.99 0 0);
-    
-    /* Secondary */
-    --secondary: oklch(0.96 0.005 270);
-    --secondary-foreground: oklch(0.15 0.01 270);
-    
-    /* Muted */
-    --muted: oklch(0.96 0.005 270);
-    --muted-foreground: oklch(0.45 0.01 270);
-    
-    /* Accent - Metallic highlights */
-    --accent: oklch(0.92 0.01 270);
-    --accent-foreground: oklch(0.15 0.01 270);
-    
-    /* Destructive */
-    --destructive: oklch(0.55 0.22 25);
-    --destructive-foreground: oklch(0.99 0 0);
-    
-    /* Borders & Inputs */
-    --border: oklch(0.90 0.005 270);
-    --input: oklch(0.90 0.005 270);
-    --ring: oklch(0.45 0.02 270);
-    
-    /* Chart Colors */
-    --chart-1: oklch(0.65 0.15 250);
-    --chart-2: oklch(0.70 0.15 150);
-    --chart-3: oklch(0.75 0.10 50);
-    --chart-4: oklch(0.68 0.18 320);
-    --chart-5: oklch(0.72 0.12 180);
-    
-    /* Typography */
-    --font-size: 16px;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    /* Core Colors - Dark Mode */
-    --background: oklch(0.08 0.01 270);
-    --foreground: oklch(0.98 0.005 270);
-    
-    /* Card & UI Elements */
-    --card: oklch(0.12 0.01 270);
-    --card-foreground: oklch(0.98 0.005 270);
-    
-    /* Popover */
-    --popover: oklch(0.10 0.01 270);
-    --popover-foreground: oklch(0.98 0.005 270);
-    
-    /* Primary - Metallic Silver/Gray (brighter in dark) */
-    --primary: oklch(0.75 0.03 270);
-    --primary-foreground: oklch(0.08 0.01 270);
-    
-    /* Secondary */
-    --secondary: oklch(0.18 0.01 270);
-    --secondary-foreground: oklch(0.98 0.005 270);
-    
-    /* Muted */
-    --muted: oklch(0.18 0.01 270);
-    --muted-foreground: oklch(0.65 0.01 270);
-    
-    /* Accent - Metallic highlights */
-    --accent: oklch(0.22 0.02 270);
-    --accent-foreground: oklch(0.98 0.005 270);
-    
-    /* Destructive */
-    --destructive: oklch(0.60 0.24 25);
-    --destructive-foreground: oklch(0.98 0.005 270);
-    
-    /* Borders & Inputs */
-    --border: oklch(0.22 0.02 270);
-    --input: oklch(0.22 0.02 270);
-    --ring: oklch(0.75 0.03 270);
-    
-    /* Chart Colors */
-    --chart-1: oklch(0.55 0.18 250);
-    --chart-2: oklch(0.60 0.18 150);
-    --chart-3: oklch(0.65 0.12 50);
-    --chart-4: oklch(0.58 0.20 320);
-    --chart-5: oklch(0.62 0.15 180);
-  }
+@theme inline {
+  --color-background: oklch(0.99 0 0);
+  --color-foreground: oklch(0.15 0.01 270);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.15 0.01 270);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.15 0.01 270);
+  --color-primary: oklch(0.45 0.02 270);
+  --color-primary-foreground: oklch(0.99 0 0);
+  --color-secondary: oklch(0.96 0.005 270);
+  --color-secondary-foreground: oklch(0.15 0.01 270);
+  --color-muted: oklch(0.96 0.005 270);
+  --color-muted-foreground: oklch(0.45 0.01 270);
+  --color-accent: oklch(0.92 0.01 270);
+  --color-accent-foreground: oklch(0.15 0.01 270);
+  --color-destructive: oklch(0.55 0.22 25);
+  --color-destructive-foreground: oklch(0.99 0 0);
+  --color-border: oklch(0.90 0.005 270);
+  --color-input: oklch(0.90 0.005 270);
+  --color-ring: oklch(0.45 0.02 270);
+  --color-chart-1: oklch(0.65 0.15 250);
+  --color-chart-2: oklch(0.70 0.15 150);
+  --color-chart-3: oklch(0.75 0.10 50);
+  --color-chart-4: oklch(0.68 0.18 320);
+  --color-chart-5: oklch(0.72 0.12 180);
+  --radius: 0.5rem;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+/* Dark mode color overrides */
+.dark {
+  --color-background: oklch(0.08 0.01 270);
+  --color-foreground: oklch(0.98 0.005 270);
+  --color-card: oklch(0.12 0.01 270);
+  --color-card-foreground: oklch(0.98 0.005 270);
+  --color-popover: oklch(0.10 0.01 270);
+  --color-popover-foreground: oklch(0.98 0.005 270);
+  --color-primary: oklch(0.75 0.03 270);
+  --color-primary-foreground: oklch(0.08 0.01 270);
+  --color-secondary: oklch(0.18 0.01 270);
+  --color-secondary-foreground: oklch(0.98 0.005 270);
+  --color-muted: oklch(0.18 0.01 270);
+  --color-muted-foreground: oklch(0.65 0.01 270);
+  --color-accent: oklch(0.22 0.02 270);
+  --color-accent-foreground: oklch(0.98 0.005 270);
+  --color-destructive: oklch(0.60 0.24 25);
+  --color-destructive-foreground: oklch(0.98 0.005 270);
+  --color-border: oklch(0.22 0.02 270);
+  --color-input: oklch(0.22 0.02 270);
+  --color-ring: oklch(0.75 0.03 270);
+  --color-chart-1: oklch(0.55 0.18 250);
+  --color-chart-2: oklch(0.60 0.18 150);
+  --color-chart-3: oklch(0.65 0.12 50);
+  --color-chart-4: oklch(0.58 0.20 320);
+  --color-chart-5: oklch(0.62 0.15 180);
 }
 
-/**
- * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
- */
-@layer base {
-  h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-  }
-  
-  h3 {
-    font-size: 1.875rem;
-    font-weight: 600;
-    line-height: 1.3;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.4;
-  }
-  
-  h5 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.5;
-  }
-  
-  h6 {
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.5;
-  }
-  
-  p {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.7;
-  }
-  
-  small {
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.6;
-  }
-}
-
-/* Ensure Inter is applied globally to all elements */
-html {
-  font-size: var(--font-size);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
-/* Ensure Inter is applied globally to all elements */
 * {
-  font-family: inherit;
+  border-color: var(--color-border);
 }
 
-/**
- * Glassmorphism utilities for premium fintech UI
- */
-@layer utilities {
-  .glass-card {
-    @apply backdrop-blur-xl bg-white/70 dark:bg-gray-900/70 border border-gray-200/50 dark:border-gray-700/50;
-  }
-  
-  .glass-card-heavy {
-    @apply backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200/60 dark:border-gray-700/60;
-  }
-  
-  .metallic-gradient {
-    @apply bg-gradient-to-br from-gray-400 via-gray-300 to-gray-500 dark:from-gray-600 dark:via-gray-500 dark:to-gray-700;
-  }
-  
-  .metallic-text {
-    @apply bg-gradient-to-br from-gray-600 via-gray-400 to-gray-600 dark:from-gray-300 dark:via-gray-100 dark:to-gray-300 bg-clip-text text-transparent;
-  }
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/**
- * Scrollbar personalizado premium
- */
+/* Scrollbar personalizado premium */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
