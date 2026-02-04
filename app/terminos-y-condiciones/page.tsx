@@ -30,7 +30,7 @@ export default function TerminosYCondicionesPage() {
 
           <div className="prose prose-gray dark:prose-invert max-w-none space-y-8">
             <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              KARDIA TECH SAPI DE CV (en lo sucesivo "Krdia"), con domicilio en Eugenia 520, Col. Del Valle Centro, C.P. 03100, Benito Juarez, CDMX, Mexico, te da a conocer por este medio los Terminos y Condiciones generales de uso de sus Paginas Web (en adelante, la "Pagina"), sus aplicaciones moviles (en lo sucesivo "Apps") y/o cualquier otra plataforma digital que KRDIA ponga a tu disposicion, en las cuales se pueden encontrar en forma enunciativa mas no limitativa, informacion, servicios, consultas, contenidos y/o productos.
+              KARDIA TECH SAPI DE CV (en lo sucesivo "KRDIA"), con domicilio en Eugenia 520, Col. Del Valle Centro, C.P. 03100, Benito Juarez, CDMX, Mexico, te da a conocer por este medio los Terminos y Condiciones generales de uso de sus Paginas Web (en adelante, la "Pagina"), sus aplicaciones moviles (en lo sucesivo "Apps") y/o cualquier otra plataforma digital que KRDIA ponga a tu disposicion, en las cuales se pueden encontrar en forma enunciativa mas no limitativa, informacion, servicios, consultas, contenidos y/o productos.
             </p>
 
             <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -148,7 +148,7 @@ export default function TerminosYCondicionesPage() {
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mt-10">
                 IX. POLITICAS DE SERVICIO, ENTREGAS Y CANCELACIONES
               </h2>
-              
+
               <h3 className="text-lg font-medium text-gray-900 dark:text-white mt-6">
                 IX.I. Medidas de Seguridad y Proteccion de Fondos
               </h3>
