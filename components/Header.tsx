@@ -2,8 +2,9 @@
 
 import { Sun, Moon } from 'lucide-react';
 import { motion } from 'motion/react';
-import logoBlack from 'figma:asset/8e08f8e62548425109b6c90d1381d40cded9e69c.png';
-import logoWhite from 'figma:asset/926a13cb5bedd32726567b04d34dbe8a2b14fbfa.png';
+
+const logoBlack = '/assets/8e08f8e62548425109b6c90d1381d40cded9e69c.png';
+const logoWhite = '/assets/926a13cb5bedd32726567b04d34dbe8a2b14fbfa.png';
 
 interface HeaderProps {
   isDark: boolean;

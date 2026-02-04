@@ -2,8 +2,9 @@
 
 import { motion, useSpring } from 'motion/react';
 import { useState, useRef, useEffect } from 'react';
-import cardFrontImage from 'figma:asset/cd5f83a8b0f85633f582143d392e7009d88e5ddb.png';
-import cardBackImage from 'figma:asset/ededb0bc548037fefbd36703c127438f2bf69d60.png';
+
+const cardFrontImage = '/assets/cd5f83a8b0f85633f582143d392e7009d88e5ddb.png';
+const cardBackImage = '/assets/ededb0bc548037fefbd36703c127438f2bf69d60.png';
 
 interface Card3DPhysicalProps {
   mousePosition: { x: number; y: number };
