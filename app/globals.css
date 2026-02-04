@@ -1,9 +1,14 @@
 @import 'tailwindcss';
 
+@source "../components/**/*.{js,ts,jsx,tsx,mdx}";
+@source "../app/**/*.{js,ts,jsx,tsx,mdx}";
+
 /**
  * KRDIA - Sistema de Diseño Premium Fintech
  * Tema intercambiable (light/dark) con glassmorphism y degradados metálicos
  */
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer theme {
   :root {
