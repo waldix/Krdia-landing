@@ -44,7 +44,7 @@ export function UseCasesDynamic() {
   const rotate = useTransform(scrollYProgress, [0, 0.5, 1], [-5, 0, 5]);
 
   return (
-    <section ref={containerRef} className="py-40 px-6 relative overflow-hidden">
+    <section ref={containerRef} className="py-16 sm:py-24 lg:py-40 px-4 sm:px-6 relative overflow-hidden">
       {/* Animated diagonal stripe */}
       <motion.div
         className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent"
@@ -58,19 +58,19 @@ export function UseCasesDynamic() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-24"
+          className="text-center mb-10 sm:mb-16 lg:mb-24"
         >
-          <h2 className="text-6xl lg:text-7xl font-light bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent mb-4 sm:mb-6">
             Casos de uso
           </h2>
-          <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400">
+          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 dark:text-gray-400 px-4">
             Soluciones para diferentes necesidades empresariales
           </p>
         </motion.div>
 
         <motion.div 
           style={{ rotateZ: rotate }}
-          className="grid md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8"
         >
           {useCases.map((useCase, index) => (
             <motion.div
@@ -93,7 +93,7 @@ export function UseCasesDynamic() {
               }}
               className="group relative"
             >
-              <div className="h-full p-12 rounded-[2rem] backdrop-blur-2xl bg-gradient-to-br from-white/50 via-white/40 to-white/30 dark:from-black/50 dark:via-black/40 dark:to-black/30 border border-white/30 dark:border-gray-700/30 shadow-2xl hover:shadow-3xl transition-all duration-700 relative overflow-hidden">
+              <div className="h-full p-5 sm:p-8 lg:p-12 rounded-2xl sm:rounded-[2rem] backdrop-blur-2xl bg-gradient-to-br from-white/50 via-white/40 to-white/30 dark:from-black/50 dark:via-black/40 dark:to-black/30 border border-white/30 dark:border-gray-700/30 shadow-2xl hover:shadow-3xl transition-all duration-700 relative overflow-hidden">
                 {/* Animated gradient background */}
                 <motion.div
                   className={`absolute inset-0 bg-gradient-to-br ${useCase.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-700`}
@@ -101,7 +101,7 @@ export function UseCasesDynamic() {
 
                 {/* Floating orb */}
                 <motion.div
-                  className={`absolute -top-16 -right-16 w-64 h-64 bg-gradient-to-br ${useCase.gradient} rounded-full blur-3xl opacity-0 group-hover:opacity-30`}
+                  className={`absolute -top-8 sm:-top-16 -right-8 sm:-right-16 w-32 sm:w-64 h-32 sm:h-64 bg-gradient-to-br ${useCase.gradient} rounded-full blur-3xl opacity-0 group-hover:opacity-30`}
                   animate={{
                     scale: [1, 1.2, 1],
                     rotate: [0, 90, 0],
@@ -113,20 +113,20 @@ export function UseCasesDynamic() {
                   }}
                 />
 
-                <div className="relative z-10 flex items-start gap-8">
+                <div className="relative z-10 flex flex-col sm:flex-row items-start gap-4 sm:gap-6 lg:gap-8">
                   <motion.div
-                    className="flex-shrink-0 w-20 h-20 rounded-2xl bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 border border-gray-200 dark:border-gray-700 flex items-center justify-center shadow-xl"
+                    className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 border border-gray-200 dark:border-gray-700 flex items-center justify-center shadow-xl"
                     whileHover={{ rotate: 360, scale: 1.15 }}
                     transition={{ duration: 0.8, type: 'spring' }}
                   >
-                    <useCase.icon className="w-10 h-10 text-gray-700 dark:text-gray-300" />
+                    <useCase.icon className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-gray-700 dark:text-gray-300" />
                   </motion.div>
 
-                  <div className="flex-1 space-y-4">
-                    <h3 className="text-3xl font-medium text-gray-900 dark:text-white">
+                  <div className="flex-1 space-y-2 sm:space-y-3 lg:space-y-4">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-900 dark:text-white">
                       {useCase.title}
                     </h3>
-                    <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                       {useCase.description}
                     </p>
                   </div>

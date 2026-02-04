@@ -22,7 +22,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
   const cardY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
 
   return (
-    <section ref={containerRef} className="relative pt-32 pb-32 px-6 overflow-hidden min-h-screen flex items-center">
+    <section ref={containerRef} className="relative pt-24 sm:pt-32 pb-16 sm:pb-32 px-4 sm:px-6 overflow-hidden min-h-screen flex items-center">
       {/* Clean background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Subtle grid */}
@@ -86,36 +86,36 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
       </div>
 
       <div className="max-w-[1600px] mx-auto w-full relative z-10">
-        <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 xl:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-12 xl:gap-16 items-center">
           {/* Left Column - Text Content */}
           <motion.div 
-            className="space-y-10 lg:pr-8"
+            className="space-y-6 sm:space-y-8 lg:space-y-10 lg:pr-8 text-center lg:text-left"
             style={{ y: textY, opacity }}
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-full backdrop-blur-2xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30 shadow-xl"
+              className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 rounded-full backdrop-blur-2xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30 shadow-xl"
             >
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               >
-                <Sparkles className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 dark:text-gray-400" />
               </motion.div>
-              <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400">
                 Dispersión de Tarjetas B2B
               </span>
             </motion.div>
             
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                <h1 className="text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight leading-[1.1]">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight leading-[1.1]">
                   <motion.span 
                     className="block bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400 bg-clip-text text-transparent"
                     animate={{
@@ -136,7 +136,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               </motion.div>
               
               <motion.h1
-                className="text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight leading-[1.1]"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight leading-[1.1]"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.7 }}
@@ -147,7 +147,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               </motion.h1>
 
               <motion.h2
-                className="text-6xl lg:text-7xl xl:text-8xl font-normal tracking-tight leading-[1.1]"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal tracking-tight leading-[1.1]"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.9 }}
@@ -162,7 +162,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.1 }}
-              className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed"
+              className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 dark:text-gray-400 max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
               Emite y distribuye tarjetas de forma ágil, segura y escalable. 
               Control total para tu operación empresarial.
@@ -172,12 +172,12 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.3 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center lg:justify-start"
             >
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative px-10 py-5 rounded-2xl backdrop-blur-xl bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 text-white dark:text-gray-900 font-semibold shadow-2xl overflow-hidden"
+                className="group relative px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 rounded-xl sm:rounded-2xl backdrop-blur-xl bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 text-white dark:text-gray-900 font-semibold shadow-2xl overflow-hidden"
               >
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-100 dark:to-white"
@@ -185,35 +185,35 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                   whileHover={{ x: 0 }}
                   transition={{ duration: 0.3 }}
                 />
-                <span className="relative z-10 flex items-center justify-center gap-2 text-lg">
+                <span className="relative z-10 flex items-center justify-center gap-2 text-sm sm:text-base lg:text-lg">
                   Solicitar demo
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-2 transition-transform" />
                 </span>
               </motion.button>
 
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-10 py-5 rounded-2xl backdrop-blur-xl bg-white/40 dark:bg-black/40 border-2 border-gray-300/50 dark:border-gray-700/50 text-gray-900 dark:text-white font-semibold hover:bg-white/60 dark:hover:bg-black/60 transition-all shadow-xl text-lg"
+                className="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 rounded-xl sm:rounded-2xl backdrop-blur-xl bg-white/40 dark:bg-black/40 border-2 border-gray-300/50 dark:border-gray-700/50 text-gray-900 dark:text-white font-semibold hover:bg-white/60 dark:hover:bg-black/60 transition-all shadow-xl text-sm sm:text-base lg:text-lg"
               >
                 Hablar con ventas
               </motion.button>
             </motion.div>
 
-            {/* Interaction hint */}
+            {/* Interaction hint - hidden on mobile */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 2.5 }}
-              className="pt-8"
+              className="pt-4 sm:pt-8 hidden sm:block"
             >
               <motion.div
                 animate={{ x: [0, 5, 0] }}
                 transition={{ duration: 2.5, repeat: Infinity }}
-                className="flex items-center gap-3 text-gray-500 dark:text-gray-600"
+                className="flex items-center gap-3 text-gray-500 dark:text-gray-600 justify-center lg:justify-start"
               >
-                <MousePointer2 className="w-5 h-5" />
-                <span className="text-sm font-medium">Tarjeta 3D vertical · Gira continuamente · Hover para explorar</span>
+                <MousePointer2 className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="text-xs sm:text-sm font-medium">Tarjeta 3D vertical · Gira continuamente · Hover para explorar</span>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -224,7 +224,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
             initial={{ opacity: 0, x: 80, scale: 0.9 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="relative flex items-center justify-center lg:justify-end min-h-[650px]"
+            className="relative flex items-center justify-center lg:justify-end min-h-[400px] sm:min-h-[500px] lg:min-h-[650px] mt-8 lg:mt-0"
           >
             {/* Subtle directional light simulation */}
             <div className="absolute inset-0 flex items-center justify-center lg:justify-end pointer-events-none">

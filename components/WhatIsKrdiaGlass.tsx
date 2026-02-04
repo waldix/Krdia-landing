@@ -17,7 +17,7 @@ export function WhatIsKrdiaGlass() {
   const rotateZ = useTransform(scrollYProgress, [0, 0.5, 1], [5, 0, -2]);
 
   return (
-    <section id="producto" ref={containerRef} className="py-40 px-6 relative overflow-hidden">
+    <section id="producto" ref={containerRef} className="py-16 sm:py-24 lg:py-40 px-4 sm:px-6 relative overflow-hidden">
       {/* Diagonal animated background */}
       <motion.div
         className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-gray-100/60 to-transparent dark:from-gray-900/60 dark:to-transparent"
@@ -29,7 +29,7 @@ export function WhatIsKrdiaGlass() {
           initial={{ opacity: 0, y: 80, scale: 0.95 }}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="backdrop-blur-3xl bg-gradient-to-br from-white/50 via-white/40 to-white/30 dark:from-black/50 dark:via-black/40 dark:to-black/30 rounded-[2rem] p-16 lg:p-20 border border-white/30 dark:border-gray-700/30 shadow-2xl relative overflow-hidden"
+          className="backdrop-blur-3xl bg-gradient-to-br from-white/50 via-white/40 to-white/30 dark:from-black/50 dark:via-black/40 dark:to-black/30 rounded-2xl sm:rounded-[2rem] p-6 sm:p-10 lg:p-16 xl:p-20 border border-white/30 dark:border-gray-700/30 shadow-2xl relative overflow-hidden"
         >
           {/* Animated gradient orbs */}
           <motion.div
@@ -62,7 +62,7 @@ export function WhatIsKrdiaGlass() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl lg:text-7xl font-light bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400 bg-clip-text text-transparent mb-10 text-center relative z-10"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400 bg-clip-text text-transparent mb-6 sm:mb-8 lg:mb-10 text-center relative z-10"
           >
             ¿Qué es Krdia?
           </motion.h2>
@@ -71,9 +71,9 @@ export function WhatIsKrdiaGlass() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-8 text-center relative z-10"
+            className="space-y-4 sm:space-y-6 lg:space-y-8 text-center relative z-10"
           >
-            <p className="text-2xl lg:text-3xl text-gray-800 dark:text-gray-200 leading-relaxed font-light">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-800 dark:text-gray-200 leading-relaxed font-light">
               Krdia es un servicio de dispersión de tarjetas diseñado para empresas que necesitan 
               emitir, distribuir y controlar tarjetas de forma masiva y eficiente.
             </p>
@@ -81,9 +81,9 @@ export function WhatIsKrdiaGlass() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="inline-block px-8 py-4 rounded-2xl backdrop-blur-xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30"
+              className="inline-block px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl backdrop-blur-xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30"
             >
-              <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl">
+              <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl">
                 Desde nómina hasta programas de incentivos, Krdia te permite gestionar todo el ciclo 
                 de vida de las tarjetas con tecnología de nivel empresarial, trazabilidad completa 
                 y cumplimiento normativo garantizado.

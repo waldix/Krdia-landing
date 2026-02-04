@@ -59,11 +59,32 @@ export function Card3DPhysical({ mousePosition }: Card3DPhysicalProps) {
   const specularPos = getSpecularPosition();
 
   // VERTICAL card dimensions - exact proportion from Figma design
-  const cardWidth = 340; // narrow side
-  const cardHeight = cardWidth * (869 / 548); // 1.586 ratio = ~539px
+  // Responsive sizing based on viewport
+  const [cardWidth, setCardWidth] = useState(340);
   
-  // Corner radius: Original 36px on 548px base → scaled to 340px
-  const cornerRadius = (36 / 548) * cardWidth; // ≈ 22.34px
+  useEffect(() => {
+    const updateCardSize = () => {
+      const width = window.innerWidth;
+      if (width < 480) {
+        setCardWidth(220); // Mobile small
+      } else if (width < 640) {
+        setCardWidth(260); // Mobile large
+      } else if (width < 1024) {
+        setCardWidth(300); // Tablet
+      } else {
+        setCardWidth(340); // Desktop
+      }
+    };
+    
+    updateCardSize();
+    window.addEventListener('resize', updateCardSize);
+    return () => window.removeEventListener('resize', updateCardSize);
+  }, []);
+  
+  const cardHeight = cardWidth * (869 / 548); // 1.586 ratio
+  
+  // Corner radius: Original 36px on 548px base → scaled proportionally
+  const cornerRadius = (36 / 548) * cardWidth;
   
   // Thickness: Very thin like a real physical card
   const cardThickness = 3; // Ultra-thin realistic card thickness

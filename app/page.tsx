@@ -30,11 +30,11 @@ export default function HomePage() {
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-black dark:to-gray-900 text-gray-900 dark:text-gray-100 transition-all duration-700 overflow-x-hidden">
         <CursorGlow mousePosition={mousePosition} />
         
-        {/* Ambient background gradients */}
-        <div className="fixed inset-0 opacity-30 dark:opacity-25 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-gradient-to-br from-gray-400/30 via-gray-300/15 to-transparent dark:from-gray-600/35 dark:via-gray-700/18 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }} />
-          <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-gradient-to-tl from-gray-300/35 via-gray-200/15 to-transparent dark:from-gray-700/40 dark:via-gray-800/18 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s' }} />
-          <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-gradient-to-br from-gray-200/25 to-transparent dark:from-gray-600/25 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '12s' }} />
+        {/* Ambient background gradients - reduced on mobile for performance */}
+        <div className="fixed inset-0 opacity-20 sm:opacity-30 dark:opacity-15 sm:dark:opacity-25 pointer-events-none">
+          <div className="absolute top-0 left-1/4 w-[250px] sm:w-[400px] lg:w-[500px] h-[250px] sm:h-[400px] lg:h-[500px] bg-gradient-to-br from-gray-400/30 via-gray-300/15 to-transparent dark:from-gray-600/35 dark:via-gray-700/18 rounded-full blur-2xl sm:blur-3xl animate-pulse" style={{ animationDuration: '8s' }} />
+          <div className="absolute bottom-1/4 right-1/4 w-[300px] sm:w-[500px] lg:w-[600px] h-[300px] sm:h-[500px] lg:h-[600px] bg-gradient-to-tl from-gray-300/35 via-gray-200/15 to-transparent dark:from-gray-700/40 dark:via-gray-800/18 rounded-full blur-2xl sm:blur-3xl animate-pulse" style={{ animationDuration: '10s' }} />
+          <div className="hidden sm:block absolute top-1/2 left-1/2 w-[300px] lg:w-[400px] h-[300px] lg:h-[400px] bg-gradient-to-br from-gray-200/25 to-transparent dark:from-gray-600/25 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '12s' }} />
         </div>
 
         <div className="relative z-10">
