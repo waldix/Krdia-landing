@@ -1,11 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /**
  * KRDIA - Sistema de Diseno Premium Fintech
  * Tema intercambiable (light/dark) con glassmorphism y degradados metalicos
  */
-
-@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: oklch(0.99 0 0);
