@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
+import Link from 'next/link';
 
 export function FooterGlass() {
   return (
@@ -29,15 +30,27 @@ export function FooterGlass() {
           {[
             {
               title: 'Producto',
-              links: ['Características', 'Precios', 'Documentación API'],
+              links: [
+                { label: 'Características', href: '#producto' },
+                { label: 'Precios', href: '#' },
+                { label: 'Documentación API', href: '#' },
+              ],
             },
             {
               title: 'Empresa',
-              links: ['Acerca de', 'Blog', 'Carreras'],
+              links: [
+                { label: 'Acerca de', href: '#' },
+                { label: 'Blog', href: '#' },
+                { label: 'Carreras', href: '#' },
+              ],
             },
             {
               title: 'Legal',
-              links: ['Términos y condiciones', 'Privacidad', 'Cumplimiento'],
+              links: [
+                { label: 'Términos y condiciones', href: '/terminos-y-condiciones' },
+                { label: 'Privacidad', href: '#' },
+                { label: 'Cumplimiento', href: '#' },
+              ],
             },
           ].map((section, index) => (
             <motion.div
@@ -52,14 +65,15 @@ export function FooterGlass() {
               </h4>
               <ul className="space-y-2 sm:space-y-3">
                 {section.links.map((link) => (
-                  <li key={link}>
-                    <motion.a
-                      href="#"
-                      className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-                      whileHover={{ x: 2 }}
-                    >
-                      {link}
-                    </motion.a>
+                  <li key={link.label}>
+                    <Link href={link.href}>
+                      <motion.span
+                        className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors cursor-pointer"
+                        whileHover={{ x: 2 }}
+                      >
+                        {link.label}
+                      </motion.span>
+                    </Link>
                   </li>
                 ))}
               </ul>
