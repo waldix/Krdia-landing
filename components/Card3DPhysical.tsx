@@ -3,7 +3,7 @@
 import { motion, useSpring } from 'motion/react';
 import { useState, useRef, useEffect } from 'react';
 
-// Static asset paths from public folder
+// Card images served from public/assets folder
 const cardFrontImage = '/assets/cd5f83a8b0f85633f582143d392e7009d88e5ddb.png';
 const cardBackImage = '/assets/ededb0bc548037fefbd36703c127438f2bf69d60.png';
 

@@ -4,7 +4,7 @@ import { Sun, Moon, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 
-// Static asset paths from public folder
+// Logo images served from public/assets folder
 const logoBlack = '/assets/8e08f8e62548425109b6c90d1381d40cded9e69c.png';
 const logoWhite = '/assets/926a13cb5bedd32726567b04d34dbe8a2b14fbfa.png';
 
