@@ -48,7 +48,7 @@ export function FooterGlass() {
               title: 'Legal',
               links: [
                 { label: 'Términos y condiciones', href: '/terminos-y-condiciones' },
-                { label: 'Privacidad', href: '#' },
+                { label: 'Aviso de Privacidad', href: '/aviso-de-privacidad' },
                 { label: 'Cumplimiento', href: '#' },
               ],
             },
