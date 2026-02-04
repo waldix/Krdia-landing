@@ -49,7 +49,7 @@ export function FooterGlass() {
               links: [
                 { label: 'Términos y condiciones', href: '/terminos-y-condiciones' },
                 { label: 'Aviso de Privacidad', href: '/aviso-de-privacidad' },
-                { label: 'Cumplimiento', href: '#' },
+                { label: 'Soporte', href: '/soporte' },
               ],
             },
           ].map((section, index) => (
