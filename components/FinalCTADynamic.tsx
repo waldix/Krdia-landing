@@ -69,15 +69,15 @@ export function FinalCTADynamic() {
               repeat: Infinity,
             }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white mb-3 sm:mb-4 lg:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-white mb-3 sm:mb-4 lg:mb-6">
               Comienza a dispersar
             </h2>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white">
               tarjetas hoy
             </h2>
           </motion.div>
           
-          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-base sm:text-lg lg:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Agenda una demo personalizada y descubre cómo Krdia puede transformar 
             la gestión de tarjetas en tu empresa.
           </p>

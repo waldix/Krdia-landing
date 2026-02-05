@@ -70,10 +70,10 @@ export function SecurityPremium() {
           transition={{ duration: 0.8 }}
           className="text-center mb-10 sm:mb-16 lg:mb-24"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent mb-4 sm:mb-6">
             Seguridad y confianza
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 dark:text-gray-400 px-4">
+          <p className="text-base sm:text-lg lg:text-lg text-gray-600 dark:text-gray-400 px-4">
             Infraestructura certificada y cumplimiento normativo garantizado
           </p>
         </motion.div>
@@ -134,7 +134,7 @@ export function SecurityPremium() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.6 }}
-            className="text-sm sm:text-base lg:text-xl xl:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed relative z-10"
+            className="text-sm sm:text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed relative z-10"
           >
             Krdia opera con los más altos estándares de seguridad de la industria financiera. 
             Nuestra infraestructura está diseñada para proteger cada transacción y garantizar 

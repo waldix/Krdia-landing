@@ -61,10 +61,10 @@ export function HowItWorksHorizontal() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent mb-4 sm:mb-6">
             Cómo funciona
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 dark:text-gray-400 px-4">
+          <p className="text-base sm:text-lg lg:text-lg text-gray-600 dark:text-gray-400 px-4">
             Cuatro pasos para implementar tu programa de dispersión
           </p>
         </motion.div>

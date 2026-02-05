@@ -62,7 +62,7 @@ export function WhatIsKrdiaGlass() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400 bg-clip-text text-transparent mb-6 sm:mb-8 lg:mb-10 text-center relative z-10"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400 bg-clip-text text-transparent mb-6 sm:mb-8 lg:mb-10 text-center relative z-10"
           >
             ¿Qué es Krdia?
           </motion.h2>
@@ -73,7 +73,7 @@ export function WhatIsKrdiaGlass() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-4 sm:space-y-6 lg:space-y-8 text-center relative z-10"
           >
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-800 dark:text-gray-200 leading-relaxed font-light">
+            <p className="text-base sm:text-lg md:text-xl lg:text-xl text-gray-800 dark:text-gray-200 leading-relaxed font-light">
               Krdia es un servicio de dispersión de tarjetas diseñado para empresas que necesitan 
               emitir, distribuir y controlar tarjetas de forma masiva y eficiente.
             </p>
@@ -83,7 +83,7 @@ export function WhatIsKrdiaGlass() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="inline-block px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl backdrop-blur-xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30"
             >
-              <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl">
                 Desde nómina hasta programas de incentivos, Krdia te permite gestionar todo el ciclo 
                 de vida de las tarjetas con tecnología de nivel empresarial, trazabilidad completa 
                 y cumplimiento normativo garantizado.
