@@ -119,40 +119,40 @@ export function HowItWorksHorizontal() {
               whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="flex-shrink-0 w-[380px] xl:w-[450px] group"
+              className="flex-shrink-0 w-[280px] xl:w-[320px] group"
             >
               <motion.div
                 whileHover={{ scale: 1.02, y: -8 }}
-                className="relative h-full p-8 xl:p-12 rounded-2xl xl:rounded-[2rem] backdrop-blur-2xl bg-gradient-to-br from-white/60 via-white/50 to-white/40 dark:from-black/60 dark:via-black/50 dark:to-black/40 border border-white/40 dark:border-gray-700/40 shadow-2xl overflow-hidden"
+                className="relative h-full p-6 xl:p-8 rounded-2xl backdrop-blur-2xl bg-gradient-to-br from-white/60 via-white/50 to-white/40 dark:from-black/60 dark:via-black/50 dark:to-black/40 border border-white/40 dark:border-gray-700/40 shadow-2xl overflow-hidden"
               >
                 {/* Number watermark */}
-                <div className="absolute top-6 right-6 xl:top-8 xl:right-8 text-[80px] xl:text-[120px] font-light text-gray-200/20 dark:text-gray-800/20 select-none leading-none">
+                <div className="absolute top-4 right-4 xl:top-6 xl:right-6 text-[50px] xl:text-[60px] font-light text-gray-200/20 dark:text-gray-800/20 select-none leading-none">
                   {step.number}
                 </div>
 
                 {/* Gradient orb */}
                 <motion.div
-                  className={`absolute -top-10 -right-10 w-32 xl:w-40 h-32 xl:h-40 bg-gradient-to-br ${step.color} rounded-full blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500`}
+                  className={`absolute -top-8 -right-8 w-24 xl:w-28 h-24 xl:h-28 bg-gradient-to-br ${step.color} rounded-full blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500`}
                 />
 
                 <motion.div
-                  className="relative z-10 space-y-4 xl:space-y-6"
-                  whileHover={{ y: -5 }}
+                  className="relative z-10 space-y-3 xl:space-y-4"
+                  whileHover={{ y: -3 }}
                   transition={{ type: 'spring', stiffness: 300 }}
                 >
                   <motion.div
                     whileHover={{ rotate: 360, scale: 1.1 }}
                     transition={{ duration: 0.6 }}
-                    className={`inline-flex items-center justify-center w-16 xl:w-24 h-16 xl:h-24 rounded-2xl xl:rounded-3xl bg-gradient-to-br ${step.color} shadow-2xl`}
+                    className={`inline-flex items-center justify-center w-12 xl:w-14 h-12 xl:h-14 rounded-xl xl:rounded-2xl bg-gradient-to-br ${step.color} shadow-xl`}
                   >
-                    <step.icon className="w-8 xl:w-12 h-8 xl:h-12 text-white dark:text-gray-900" />
+                    <step.icon className="w-6 xl:w-7 h-6 xl:h-7 text-white dark:text-gray-900" />
                   </motion.div>
 
-                  <h3 className="text-2xl xl:text-3xl font-medium text-gray-900 dark:text-white">
+                  <h3 className="text-lg xl:text-xl font-medium text-gray-900 dark:text-white">
                     {step.title}
                   </h3>
 
-                  <p className="text-base xl:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <p className="text-sm xl:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                     {step.description}
                   </p>
                 </motion.div>
@@ -160,12 +160,12 @@ export function HowItWorksHorizontal() {
                 {/* Connector arrow */}
                 {index < steps.length - 1 && (
                   <motion.div
-                    className="absolute top-1/2 -right-6 xl:-right-8 z-20"
-                    animate={{ x: [0, 8, 0] }}
+                    className="absolute top-1/2 -right-4 xl:-right-5 -translate-y-1/2 z-20"
+                    animate={{ x: [0, 4, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
-                    <div className="w-12 xl:w-16 h-12 xl:h-16 rounded-full backdrop-blur-xl bg-white/60 dark:bg-black/60 border border-white/40 dark:border-gray-700/40 flex items-center justify-center shadow-xl">
-                      <ArrowRight className="w-5 xl:w-6 h-5 xl:h-6 text-gray-700 dark:text-gray-300" />
+                    <div className="w-8 xl:w-10 h-8 xl:h-10 rounded-full backdrop-blur-xl bg-white/80 dark:bg-black/80 border border-gray-200 dark:border-gray-700 flex items-center justify-center shadow-lg">
+                      <ArrowRight className="w-4 xl:w-5 h-4 xl:h-5 text-gray-600 dark:text-gray-400" />
                     </div>
                   </motion.div>
                 )}
@@ -194,15 +194,15 @@ export function HowItWorksHorizontal() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="hidden lg:block text-center mt-10 xl:mt-16 relative z-10"
+        className="hidden lg:block text-center mt-8 xl:mt-12 relative z-10"
       >
         <motion.div
-          animate={{ x: [0, 10, 0] }}
+          animate={{ x: [0, 6, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="inline-flex items-center gap-3 px-4 xl:px-6 py-2 xl:py-3 rounded-full backdrop-blur-xl bg-white/40 dark:bg-black/40 border border-white/30 dark:border-gray-700/30 text-xs xl:text-sm text-gray-600 dark:text-gray-400"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-xl bg-white/40 dark:bg-black/40 border border-white/30 dark:border-gray-700/30 text-xs text-gray-600 dark:text-gray-400"
         >
           Desliza horizontalmente para ver todos los pasos
-          <ArrowRight className="w-3 xl:w-4 h-3 xl:h-4" />
+          <ArrowRight className="w-3 h-3" />
         </motion.div>
       </motion.div>
     </section>
