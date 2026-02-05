@@ -85,7 +85,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
         />
       </div>
 
-      <div className="max-w-[1600px] mx-auto w-full relative z-10">
+      <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-12 xl:gap-16 items-center">
           {/* Left Column - Text Content */}
           <motion.div 

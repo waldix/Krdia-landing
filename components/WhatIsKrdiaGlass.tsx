@@ -24,7 +24,7 @@ export function WhatIsKrdiaGlass() {
         style={{ x, rotateZ }}
       />
 
-      <div className="max-w-6xl mx-auto relative z-10" ref={ref}>
+      <div className="max-w-7xl mx-auto relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 80, scale: 0.95 }}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
