@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { FileText, Send, CreditCard, BarChart3, ArrowRight } from 'lucide-react';
+import { FileText, Send, CreditCard, BarChart3 } from 'lucide-react';
 
 const steps = [
   {
@@ -106,7 +106,7 @@ export function HowItWorksHorizontal() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative"
+                className="group"
               >
                 <motion.div
                   whileHover={{ scale: 1.02, y: -4 }}
@@ -132,17 +132,7 @@ export function HowItWorksHorizontal() {
                   </div>
                 </motion.div>
 
-                {/* Connector arrow between cards */}
-                {index < steps.length - 1 && (
-                  <div className="absolute top-1/2 -right-2 xl:-right-3 -translate-y-1/2 z-10">
-                    <motion.div
-                      animate={{ x: [0, 3, 0] }}
-                      transition={{ duration: 1.5, repeat: Infinity }}
-                    >
-                      <ArrowRight className="w-4 h-4 text-gray-400 dark:text-gray-500" />
-                    </motion.div>
-                  </div>
-                )}
+
               </motion.div>
             ))}
           </div>
