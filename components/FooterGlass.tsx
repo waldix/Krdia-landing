@@ -40,8 +40,8 @@ export function FooterGlass() {
             {
               title: 'Producto',
               links: [
-                { label: 'Características', href: '#producto' },
                 { label: 'Documentación API', href: '#' },
+                { label: 'Soporte', href: '/soporte' },
               ],
             },
             {
@@ -56,7 +56,6 @@ export function FooterGlass() {
               links: [
                 { label: 'Términos y condiciones', href: '/terminos-y-condiciones' },
                 { label: 'Aviso de Privacidad', href: '/aviso-de-privacidad' },
-                { label: 'Soporte', href: '/soporte' },
               ],
             },
           ].map((section, index) => (
