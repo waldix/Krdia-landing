@@ -41,7 +41,6 @@ export function FooterGlass() {
               title: 'Producto',
               links: [
                 { label: 'Características', href: '#producto' },
-                { label: 'Precios', href: '#' },
                 { label: 'Documentación API', href: '#' },
               ],
             },
@@ -50,7 +49,6 @@ export function FooterGlass() {
               links: [
                 { label: 'Acerca de', href: '#' },
                 { label: 'Blog', href: '#' },
-                { label: 'Carreras', href: '#' },
               ],
             },
             {
