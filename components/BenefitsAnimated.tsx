@@ -53,7 +53,7 @@ function BenefitCard({ benefit, index }: { benefit: typeof benefits[0]; index: n
       className="relative group"
     >
       <motion.div
-        className="h-full p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl backdrop-blur-2xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30 shadow-xl relative overflow-hidden"
+        className="h-full p-5 sm:p-6 lg:p-7 rounded-2xl backdrop-blur-2xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30 shadow-xl relative overflow-hidden"
         whileHover={{ 
           scale: 1.02,
           y: -4,
@@ -70,27 +70,27 @@ function BenefitCard({ benefit, index }: { benefit: typeof benefits[0]; index: n
 
         <div className="relative z-10">
           <motion.div
-            className={`w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br ${benefit.gradient} flex items-center justify-center mb-4 sm:mb-6 shadow-xl`}
+            className={`w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-xl bg-gradient-to-br ${benefit.gradient} flex items-center justify-center mb-3 sm:mb-4 shadow-lg`}
             animate={{
               rotate: isHovered ? 360 : 0,
               scale: isHovered ? 1.1 : 1,
             }}
             transition={{ duration: 0.6 }}
           >
-            <benefit.icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white dark:text-gray-900" />
+            <benefit.icon className="w-5 h-5 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white dark:text-gray-900" />
           </motion.div>
 
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 dark:text-white mb-2 sm:mb-4">
+          <h3 className="text-base sm:text-lg lg:text-lg font-semibold text-gray-900 dark:text-white mb-2 sm:mb-3">
             {benefit.title}
           </h3>
 
-          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
             {benefit.description}
           </p>
         </div>
 
         {/* Corner accent */}
-        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-gray-200/20 dark:from-gray-700/20 to-transparent rounded-bl-full" />
+        <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl from-gray-200/20 dark:from-gray-700/20 to-transparent rounded-bl-full" />
         
         {/* Glass reflection */}
         <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 dark:from-white/5 dark:via-transparent dark:to-white/0 pointer-events-none rounded-3xl" />
@@ -123,9 +123,9 @@ export function BenefitsAnimated() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-10 sm:mb-16 lg:mb-20"
+          className="text-center mb-8 sm:mb-12 lg:mb-14"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-light bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent mb-3 sm:mb-4">
             Beneficios clave
           </h2>
           <p className="text-base sm:text-lg lg:text-lg text-gray-600 dark:text-gray-400 px-4">
@@ -133,7 +133,7 @@ export function BenefitsAnimated() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-5">
           {benefits.map((benefit, index) => (
             <BenefitCard key={benefit.title} benefit={benefit} index={index} />
           ))}
