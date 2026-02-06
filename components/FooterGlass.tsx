@@ -94,18 +94,13 @@ export function FooterGlass() {
           <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 text-center sm:text-left">
             © 2026 Krdia. Todos los derechos reservados.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-            {['LinkedIn', 'Twitter', 'contacto@krdia.tech'].map((item) => (
-              <motion.a
-                key={item}
-                href="#"
-                className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-                whileHover={{ y: -2 }}
-              >
-                {item}
-              </motion.a>
-            ))}
-          </div>
+          <motion.a
+            href="mailto:contacto@krdia.tech"
+            className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+            whileHover={{ y: -2 }}
+          >
+            contacto@krdia.tech
+          </motion.a>
         </div>
       </div>
     </footer>
