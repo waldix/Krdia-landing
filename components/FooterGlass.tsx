@@ -3,6 +3,9 @@
 import { motion } from 'motion/react';
 import Link from 'next/link';
 
+const logoBlack = '/assets/8e08f8e62548425109b6c90d1381d40cded9e69c.png';
+const logoWhite = '/assets/926a13cb5bedd32726567b04d34dbe8a2b14fbfa.png';
+
 export function FooterGlass() {
   return (
     <footer className="backdrop-blur-xl bg-white/30 dark:bg-black/30 border-t border-white/20 dark:border-gray-800/20 px-4 sm:px-6 py-8 sm:py-10 lg:py-12">
@@ -14,13 +17,19 @@ export function FooterGlass() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center gap-2">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-gray-700 to-gray-900 dark:from-gray-400 dark:to-gray-600 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white dark:text-gray-900 font-bold text-base sm:text-lg">K</span>
-              </div>
-              <span className="text-lg sm:text-xl font-semibold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent">
-                Krdia
-              </span>
+            <div className="flex items-center">
+              <img 
+                src={logoBlack}
+                alt="Krdia"
+                className="h-6 sm:h-7 w-auto select-none dark:hidden"
+                draggable={false}
+              />
+              <img 
+                src={logoWhite}
+                alt="Krdia"
+                className="h-6 sm:h-7 w-auto select-none hidden dark:block"
+                draggable={false}
+              />
             </div>
             <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
               Dispersión de tarjetas para empresas. Ágil, seguro, escalable.
