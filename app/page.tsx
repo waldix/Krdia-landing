@@ -27,7 +27,7 @@ export default function HomePage() {
 
   return (
     <div className={isDark ? 'dark' : ''}>
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-black dark:to-gray-900 text-gray-900 dark:text-gray-100 transition-all duration-700 overflow-x-hidden">
+      <div className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-black dark:to-gray-900 text-gray-900 dark:text-gray-100 transition-all duration-700 overflow-x-hidden">
         <CursorGlow mousePosition={mousePosition} />
         
         {/* Ambient background gradients */}
@@ -37,7 +37,7 @@ export default function HomePage() {
           <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-gradient-to-br from-gray-200/25 to-transparent dark:from-gray-600/25 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '12s' }} />
         </div>
 
-        <div className="relative z-10">
+        <main className="relative z-10">
           <Header isDark={isDark} setIsDark={setIsDark} />
           <HeroWithPhysicalCard mousePosition={mousePosition} />
           <WhatIsKrdexGlass />
@@ -47,7 +47,7 @@ export default function HomePage() {
           <SecurityPremium />
           <FinalCTADynamic />
           <FooterGlass />
-        </div>
+        </main>
       </div>
     </div>
   );
