@@ -37,7 +37,7 @@ export function FooterGlass() {
             },
             {
               title: 'Legal',
-              links: ['Términos y condiciones', 'Privacidad', 'Cumplimiento'],
+              links: ['Términos y condiciones', 'Privacidad', 'Seguridad'],
             },
           ].map((section, index) => (
             <motion.div
