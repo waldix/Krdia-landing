@@ -29,7 +29,7 @@ export function Header({ isDark, setIsDark }: HeaderProps) {
       }}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo oficial de Krdia - negro en light, blanco en dark */}
+        {/* Logo oficial de Krdex - negro en light, blanco en dark */}
         <motion.div 
           className="flex items-center"
           whileHover={{ scale: 1.03 }}
@@ -38,7 +38,7 @@ export function Header({ isDark, setIsDark }: HeaderProps) {
           <motion.img 
             key={isDark ? 'logo-white' : 'logo-black'}
             src={isDark ? logoWhite : logoBlack}
-            alt="Krdia"
+            alt="Krdex"
             className="h-8 w-auto select-none"
             draggable="false"
             initial={{ opacity: 0 }}

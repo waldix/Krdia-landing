@@ -130,7 +130,7 @@ export function Card3DPhysical({ mousePosition }: Card3DPhysicalProps) {
           >
             <img 
               src={cardFrontImage}
-              alt="Tarjeta Krdia - Frente"
+              alt="Tarjeta Krdex - Frente"
               className="w-full h-full object-cover select-none"
               draggable="false"
               style={{ borderRadius: `${cornerRadius}px` }}
@@ -202,7 +202,7 @@ export function Card3DPhysical({ mousePosition }: Card3DPhysicalProps) {
           >
             <img 
               src={cardBackImage}
-              alt="Tarjeta Krdia - Reverso"
+              alt="Tarjeta Krdex - Reverso"
               className="w-full h-full object-cover select-none"
               draggable="false"
               style={{ borderRadius: `${cornerRadius}px` }}

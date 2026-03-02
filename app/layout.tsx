@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Krdia - Dispersión de Tarjetas Corporativas',
+  title: 'Krdex - Dispersión de Tarjetas Corporativas',
   description: 'Plataforma fintech B2B para dispersión de tarjetas corporativas con tecnología avanzada y seguridad premium.',
   keywords: 'fintech, tarjetas corporativas, dispersión, B2B, tecnología financiera',
 };

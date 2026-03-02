@@ -78,7 +78,7 @@ export function FinalCTADynamic() {
           </motion.div>
           
           <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Agenda una demo personalizada y descubre cómo Krdia puede transformar 
+            Agenda una demo personalizada y descubre cómo Krdex puede transformar 
             la gestión de tarjetas en tu empresa.
           </p>
           
@@ -139,10 +139,10 @@ export function FinalCTADynamic() {
               ¿Tienes preguntas? Estamos aquí para ayudarte
             </p>
             <a 
-              href="mailto:hola@krdia.tech" 
+              href="mailto:hola@krdex.tech" 
               className="inline-flex items-center gap-2 text-lg text-white hover:text-gray-300 transition-colors underline decoration-gray-500 hover:decoration-gray-300"
             >
-              hola@krdia.tech
+              hola@krdex.tech
               <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>

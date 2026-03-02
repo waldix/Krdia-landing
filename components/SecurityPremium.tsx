@@ -136,7 +136,7 @@ export function SecurityPremium() {
             transition={{ delay: 0.6 }}
             className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed relative z-10"
           >
-            Krdia opera con los más altos estándares de seguridad de la industria financiera. 
+            Krdex opera con los más altos estándares de seguridad de la industria financiera. 
             Nuestra infraestructura está diseñada para proteger cada transacción y garantizar 
             el cumplimiento de las regulaciones locales e internacionales.
           </motion.p>
