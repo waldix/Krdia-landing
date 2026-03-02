@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Header } from '../components/Header';
 import { HeroWithPhysicalCard } from '../components/HeroWithPhysicalCard';
-import { WhatIsKrdiaGlass } from '../components/WhatIsKrdiaGlass';
+import { WhatIsKrdexGlass } from '../components/WhatIsKrdiaGlass';
 import { BenefitsAnimated } from '../components/BenefitsAnimated';
 import { HowItWorksHorizontal } from '../components/HowItWorksHorizontal';
 import { UseCasesDynamic } from '../components/UseCasesDynamic';
@@ -40,7 +40,7 @@ export default function HomePage() {
         <div className="relative z-10">
           <Header isDark={isDark} setIsDark={setIsDark} />
           <HeroWithPhysicalCard mousePosition={mousePosition} />
-          <WhatIsKrdiaGlass />
+          <WhatIsKrdexGlass />
           <BenefitsAnimated />
           <HowItWorksHorizontal />
           <UseCasesDynamic />
