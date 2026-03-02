@@ -22,7 +22,7 @@ export function FooterGlass() {
               </span>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Dispersión de tarjetas para empresas. Ágil, seguro, escalable.
+              Tarjetas de servicio para empresas. Administración ágil y segura.
             </p>
           </motion.div>
 
@@ -72,7 +72,7 @@ export function FooterGlass() {
             © 2026 Krdex. Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
-            {['LinkedIn', 'Twitter', 'contacto@krdia.tech'].map((item) => (
+            {['LinkedIn', 'Twitter', 'contacto@krdex.tech'].map((item) => (
               <motion.a
                 key={item}
                 href="#"

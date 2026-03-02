@@ -25,14 +25,27 @@ export function FinalCTADynamic() {
         />
       </div>
 
-      {/* Floating particles */}
-      {[...Array(30)].map((_, i) => (
+      {/* Floating particles - fixed positions to avoid hydration mismatch */}
+      {[
+        { left: 10, top: 15, duration: 3.5, delay: 0.2 },
+        { left: 25, top: 40, duration: 4, delay: 0.8 },
+        { left: 45, top: 20, duration: 3.8, delay: 1.2 },
+        { left: 60, top: 70, duration: 4.2, delay: 0.5 },
+        { left: 80, top: 30, duration: 3.6, delay: 1.5 },
+        { left: 15, top: 80, duration: 4.5, delay: 0.3 },
+        { left: 35, top: 55, duration: 3.2, delay: 1.8 },
+        { left: 70, top: 10, duration: 4.8, delay: 0.6 },
+        { left: 90, top: 50, duration: 3.4, delay: 1.1 },
+        { left: 5, top: 60, duration: 4.1, delay: 1.9 },
+        { left: 50, top: 85, duration: 3.7, delay: 0.4 },
+        { left: 75, top: 45, duration: 4.3, delay: 1.4 },
+      ].map((particle, i) => (
         <motion.div
           key={i}
           className="absolute w-1 h-1 bg-gray-400 dark:bg-gray-600 rounded-full"
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            left: `${particle.left}%`,
+            top: `${particle.top}%`,
           }}
           animate={{
             y: [0, -40, 0],
@@ -40,9 +53,9 @@ export function FinalCTADynamic() {
             scale: [1, 1.5, 1],
           }}
           transition={{
-            duration: 3 + Math.random() * 2,
+            duration: particle.duration,
             repeat: Infinity,
-            delay: Math.random() * 2,
+            delay: particle.delay,
             ease: 'easeInOut',
           }}
         />
@@ -70,16 +83,16 @@ export function FinalCTADynamic() {
             }}
           >
             <h2 className="text-6xl lg:text-7xl font-light text-white mb-6">
-              Comienza a dispersar
+              Administra tus pagos
             </h2>
             <h2 className="text-6xl lg:text-7xl font-normal text-white">
-              tarjetas hoy
+              con tarjetas de servicio
             </h2>
           </motion.div>
           
           <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Agenda una demo personalizada y descubre cómo Krdex puede transformar 
-            la gestión de tarjetas en tu empresa.
+            Agenda una demo personalizada y descubre cómo Krdex puede optimizar 
+            la administración de pagos y consumos en tu empresa.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5 justify-center pt-8">

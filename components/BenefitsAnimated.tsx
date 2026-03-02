@@ -8,26 +8,26 @@ import { useState } from 'react';
 const benefits = [
   {
     icon: Zap,
-    title: 'Dispersión masiva',
-    description: 'Emite y distribuye miles de tarjetas de forma simultánea y automatizada.',
+    title: 'Administración masiva',
+    description: 'Gestiona miles de tarjetas de servicio de forma simultánea y automatizada.',
     gradient: 'from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-800',
   },
   {
     icon: Shield,
     title: 'Control y trazabilidad',
-    description: 'Visibilidad completa de cada transacción y tarjeta en tiempo real.',
+    description: 'Visibilidad completa de cada consumo y liquidación en tiempo real.',
     gradient: 'from-gray-400 to-gray-500 dark:from-gray-600 dark:to-gray-700',
   },
   {
     icon: Plug,
     title: 'Integración sencilla',
-    description: 'API REST moderna que se conecta fácilmente con tus sistemas existentes.',
+    description: 'API REST moderna que se conecta fácilmente con tus sistemas de conciliación.',
     gradient: 'from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900',
   },
   {
     icon: Lock,
-    title: 'Seguridad y cumplimiento',
-    description: 'Infraestructura certificada con los más altos estándares de seguridad financiera.',
+    title: 'Cumplimiento normativo',
+    description: 'Regulados por LFPIORPI con contratos registrados en PROFECO. Máxima seguridad.',
     gradient: 'from-gray-500 to-gray-600 dark:from-gray-600 dark:to-gray-700',
   },
   {

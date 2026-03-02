@@ -74,8 +74,8 @@ export function WhatIsKrdexGlass() {
             className="space-y-8 text-center relative z-10"
           >
             <p className="text-2xl lg:text-3xl text-gray-800 dark:text-gray-200 leading-relaxed font-light">
-              Krdex es un servicio de dispersión de tarjetas diseñado para empresas que necesitan 
-              emitir, distribuir y controlar tarjetas de forma masiva y eficiente.
+              Krdex es una plataforma de administración de tarjetas de servicio diseñada para empresas 
+              que necesitan gestionar pagos y consumos de forma eficiente y controlada.
             </p>
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -84,9 +84,9 @@ export function WhatIsKrdexGlass() {
               className="inline-block px-8 py-4 rounded-2xl backdrop-blur-xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30"
             >
               <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl">
-                Desde nómina hasta programas de incentivos, Krdex te permite gestionar todo el ciclo 
-                de vida de las tarjetas con tecnología de nivel empresarial, trazabilidad completa 
-                y cumplimiento normativo garantizado.
+                Administra los consumos y liquidaciones de tu empresa con tarjetas de servicio. 
+                Krdex te ofrece tecnología de nivel empresarial, trazabilidad completa 
+                y cumplimiento con LFPIORPI. Contratos registrados en PROFECO.
               </p>
             </motion.div>
           </motion.div>

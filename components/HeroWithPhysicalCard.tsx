@@ -116,7 +116,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 <Sparkles className="w-5 h-5 text-gray-600 dark:text-gray-400" />
               </motion.div>
               <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                Dispersión de Tarjetas B2B
+                Tarjetas de Servicio Corporativas
               </span>
             </motion.div>
             
@@ -141,7 +141,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                       backgroundSize: '200% 200%',
                     }}
                   >
-                    Dispersión
+                    Administra
                   </motion.span>
                 </h1>
               </motion.div>
@@ -153,7 +153,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 transition={{ duration: 0.8, delay: 0.7 }}
               >
                 <span className="block bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400 bg-clip-text text-transparent">
-                  de tarjetas,
+                  pagos y consumos
                 </span>
               </motion.h1>
 
@@ -164,7 +164,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 transition={{ duration: 0.8, delay: 0.9 }}
               >
                 <span className="bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-100 dark:to-white bg-clip-text text-transparent">
-                  sin fricción
+                  con tarjetas de servicio
                 </span>
               </motion.h2>
             </div>
@@ -175,8 +175,8 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               transition={{ duration: 0.8, delay: 1.1 }}
               className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed"
             >
-              Emite y distribuye tarjetas de forma ágil, segura y escalable. 
-              Control total para tu operación empresarial.
+              Gestiona los pagos y consumos de tu empresa a través de tarjetas de servicio. 
+              Control total, conciliación financiera y cumplimiento normativo.
             </motion.p>
             
             <motion.div
