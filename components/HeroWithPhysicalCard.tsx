@@ -31,14 +31,25 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
           backgroundSize: '40px 40px',
         }} />
 
-        {/* Minimal floating particles */}
-        {[...Array(10)].map((_, i) => (
+        {/* Minimal floating particles - fixed positions to avoid hydration mismatch */}
+        {[
+          { left: 15, top: 20, duration: 7, delay: 0.5 },
+          { left: 85, top: 35, duration: 8, delay: 1.2 },
+          { left: 25, top: 70, duration: 6.5, delay: 0.8 },
+          { left: 70, top: 15, duration: 7.5, delay: 2.1 },
+          { left: 45, top: 85, duration: 8.5, delay: 1.5 },
+          { left: 90, top: 60, duration: 6, delay: 0.3 },
+          { left: 10, top: 45, duration: 7.2, delay: 2.5 },
+          { left: 55, top: 25, duration: 8.2, delay: 1.8 },
+          { left: 35, top: 55, duration: 6.8, delay: 0.9 },
+          { left: 75, top: 90, duration: 7.8, delay: 2.8 },
+        ].map((particle, i) => (
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-gray-400 dark:bg-gray-600 rounded-full opacity-15"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${particle.left}%`,
+              top: `${particle.top}%`,
             }}
             animate={{
               y: [0, -40, 0],
@@ -46,10 +57,10 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               scale: [1, 1.5, 1],
             }}
             transition={{
-              duration: 6 + Math.random() * 3,
+              duration: particle.duration,
               repeat: Infinity,
               ease: 'easeInOut',
-              delay: Math.random() * 3,
+              delay: particle.delay,
             }}
           />
         ))}
