@@ -141,7 +141,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                       backgroundSize: '200% 200%',
                     }}
                   >
-                    El control
+                    Potencia
                   </motion.span>
                 </h1>
               </motion.div>
@@ -153,7 +153,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 transition={{ duration: 0.8, delay: 0.7 }}
               >
                 <span className="block bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400 bg-clip-text text-transparent">
-                  de tus gastos
+                  tu operación
                 </span>
               </motion.h1>
 
@@ -164,7 +164,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 transition={{ duration: 0.8, delay: 0.9 }}
               >
                 <span className="bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-100 dark:to-white bg-clip-text text-transparent">
-                  en una tarjeta
+                  con Krdex
                 </span>
               </motion.h2>
             </div>
@@ -175,7 +175,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               transition={{ duration: 0.8, delay: 1.1 }}
               className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed"
             >
-              Simplifica los gastos de tu empresa. Control total, visibilidad inmediata.
+              Tarjetas de servicio para empresas que quieren más control y menos complicaciones.
             </motion.p>
             
             <motion.div
