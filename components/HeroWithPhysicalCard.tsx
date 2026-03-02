@@ -175,8 +175,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               transition={{ duration: 0.8, delay: 1.1 }}
               className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed"
             >
-              Gestiona los pagos y consumos de tu empresa a través de tarjetas de servicio. 
-              Control total, conciliación financiera y cumplimiento normativo.
+              Gestiona pagos y consumos empresariales con control total y conciliación automática.
             </motion.p>
             
             <motion.div

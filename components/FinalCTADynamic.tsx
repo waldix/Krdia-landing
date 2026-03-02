@@ -91,8 +91,7 @@ export function FinalCTADynamic() {
           </motion.div>
           
           <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Agenda una demo personalizada y descubre cómo Krdex puede optimizar 
-            la administración de pagos y consumos en tu empresa.
+            Agenda una demo y conoce cómo Krdex simplifica tu operación.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5 justify-center pt-8">

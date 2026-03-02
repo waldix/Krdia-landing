@@ -74,8 +74,8 @@ export function WhatIsKrdexGlass() {
             className="space-y-8 text-center relative z-10"
           >
             <p className="text-2xl lg:text-3xl text-gray-800 dark:text-gray-200 leading-relaxed font-light">
-              Krdex es una plataforma de administración de tarjetas de servicio diseñada para empresas 
-              que necesitan gestionar pagos y consumos de forma eficiente y controlada.
+              Plataforma para gestionar pagos y consumos empresariales 
+              con tarjetas de servicio de forma ágil y controlada.
             </p>
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -84,9 +84,7 @@ export function WhatIsKrdexGlass() {
               className="inline-block px-8 py-4 rounded-2xl backdrop-blur-xl bg-white/50 dark:bg-black/50 border border-white/30 dark:border-gray-700/30"
             >
               <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl">
-                Administra los consumos y liquidaciones de tu empresa con tarjetas de servicio. 
-                Krdex te ofrece tecnología de nivel empresarial, trazabilidad completa 
-                y cumplimiento con LFPIORPI. Contratos registrados en PROFECO.
+                Tecnología empresarial con trazabilidad completa y conciliación automática.
               </p>
             </motion.div>
           </motion.div>

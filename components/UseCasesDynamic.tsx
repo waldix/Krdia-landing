@@ -9,25 +9,25 @@ const useCases = [
   {
     icon: Briefcase,
     title: 'Gastos operativos',
-    description: 'Administra los pagos operativos de tu empresa con tarjetas de servicio y conciliación automatizada.',
+    description: 'Pagos del día a día con conciliación automática.',
     gradient: 'from-gray-300 via-gray-400 to-gray-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900',
   },
   {
     icon: Award,
-    title: 'Beneficios corporativos',
-    description: 'Gestiona programas de beneficios para colaboradores con control y trazabilidad completa.',
+    title: 'Beneficios',
+    description: 'Programas para colaboradores con control total.',
     gradient: 'from-gray-400 via-gray-500 to-gray-600 dark:from-gray-600 dark:via-gray-700 dark:to-gray-800',
   },
   {
     icon: Plane,
     title: 'Viáticos',
-    description: 'Administra gastos de viaje y viáticos con control total y reportes para liquidación.',
+    description: 'Gastos de viaje con reportes automáticos.',
     gradient: 'from-gray-200 via-gray-300 to-gray-400 dark:from-gray-800 dark:via-gray-900 dark:to-black',
   },
   {
     icon: Building2,
-    title: 'Consumos empresariales',
-    description: 'Centraliza los consumos de tu empresa para una conciliación financiera eficiente.',
+    title: 'Consumos',
+    description: 'Centraliza gastos para mejor conciliación.',
     gradient: 'from-gray-500 via-gray-600 to-gray-700 dark:from-gray-600 dark:via-gray-700 dark:to-gray-800',
   },
 ];

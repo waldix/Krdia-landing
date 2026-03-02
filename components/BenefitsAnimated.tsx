@@ -8,32 +8,32 @@ import { useState } from 'react';
 const benefits = [
   {
     icon: Zap,
-    title: 'Administración masiva',
-    description: 'Gestiona miles de tarjetas de servicio de forma simultánea y automatizada.',
+    title: 'Gestión masiva',
+    description: 'Miles de tarjetas, una sola plataforma.',
     gradient: 'from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-800',
   },
   {
     icon: Shield,
-    title: 'Control y trazabilidad',
-    description: 'Visibilidad completa de cada consumo y liquidación en tiempo real.',
+    title: 'Control total',
+    description: 'Visibilidad en tiempo real de cada consumo.',
     gradient: 'from-gray-400 to-gray-500 dark:from-gray-600 dark:to-gray-700',
   },
   {
     icon: Plug,
-    title: 'Integración sencilla',
-    description: 'API REST moderna que se conecta fácilmente con tus sistemas de conciliación.',
+    title: 'Fácil integración',
+    description: 'API moderna para conectar con tus sistemas.',
     gradient: 'from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900',
   },
   {
     icon: Lock,
-    title: 'Cumplimiento normativo',
-    description: 'Regulados por LFPIORPI con contratos registrados en PROFECO. Máxima seguridad.',
+    title: 'Máxima seguridad',
+    description: 'Infraestructura con estándares empresariales.',
     gradient: 'from-gray-500 to-gray-600 dark:from-gray-600 dark:to-gray-700',
   },
   {
     icon: TrendingUp,
-    title: 'Escalabilidad',
-    description: 'Crece sin límites. Nuestra infraestructura se adapta a tu volumen de operación.',
+    title: 'Escalable',
+    description: 'Crece sin límites con tu operación.',
     gradient: 'from-gray-300 to-gray-500 dark:from-gray-700 dark:to-gray-800',
   },
 ];

@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Krdex - Administración de Tarjetas de Servicio Corporativas',
-  description: 'Plataforma B2B para administración de pagos y consumos empresariales a través de tarjetas de servicio. Tecnología avanzada y seguridad premium.',
-  keywords: 'tarjetas de servicio, administración de pagos, tarjetas corporativas, B2B, gestión empresarial',
+  title: 'Krdex - Tarjetas de Servicio Corporativas',
+  description: 'Gestiona pagos y consumos empresariales con tarjetas de servicio.',
+  keywords: 'tarjetas de servicio, pagos corporativos, B2B',
 };
 
 export default function RootLayout({
