@@ -10,7 +10,7 @@ const benefits = [
     icon: Zap,
     title: 'Gestión masiva',
     description: 'Miles de tarjetas, una sola plataforma.',
-    gradient: 'from-amber-400 to-amber-600 dark:from-amber-500 dark:to-amber-700',
+    gradient: 'from-[#B8860B] to-[#8B6914] dark:from-[#D4A574] dark:to-[#B8860B]',
   },
   {
     icon: Shield,
@@ -22,19 +22,19 @@ const benefits = [
     icon: Plug,
     title: 'Fácil integración',
     description: 'API moderna para conectar con tus sistemas.',
-    gradient: 'from-amber-500 to-yellow-600 dark:from-amber-600 dark:to-yellow-700',
+    gradient: 'from-gray-800 to-gray-900 dark:from-gray-700 dark:to-gray-800',
   },
   {
     icon: Lock,
     title: 'Máxima seguridad',
     description: 'Infraestructura con estándares empresariales.',
-    gradient: 'from-gray-800 to-black dark:from-gray-700 dark:to-gray-900',
+    gradient: 'from-[#CD853F] to-[#8B6914] dark:from-[#D4A574] dark:to-[#B8860B]',
   },
   {
     icon: TrendingUp,
     title: 'Escalable',
     description: 'Crece sin límites con tu operación.',
-    gradient: 'from-amber-600 to-amber-800 dark:from-amber-500 dark:to-amber-700',
+    gradient: 'from-gray-900 to-black dark:from-gray-700 dark:to-gray-900',
   },
 ];
 
@@ -98,7 +98,7 @@ function BenefitCard({ benefit, index }: { benefit: typeof benefits[0]; index: n
 
       {/* Floating particle */}
       <motion.div
-        className="absolute -top-2 -right-2 w-3 h-3 bg-amber-400 dark:bg-amber-500 rounded-full blur-sm"
+        className="absolute -top-2 -right-2 w-3 h-3 bg-[#B8860B] dark:bg-[#D4A574] rounded-full blur-sm"
         animate={{
           y: [0, -15, 0],
           opacity: [0.3, 0.8, 0.3],

@@ -12,9 +12,9 @@ export function FinalCTADynamic() {
           className="absolute inset-0"
           animate={{
             background: [
-              'radial-gradient(circle at 20% 50%, rgba(156, 163, 175, 0.4) 0%, transparent 50%)',
-              'radial-gradient(circle at 80% 50%, rgba(156, 163, 175, 0.4) 0%, transparent 50%)',
-              'radial-gradient(circle at 20% 50%, rgba(156, 163, 175, 0.4) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(184, 134, 11, 0.15) 0%, transparent 50%)',
+              'radial-gradient(circle at 80% 50%, rgba(205, 133, 63, 0.15) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(184, 134, 11, 0.15) 0%, transparent 50%)',
             ],
           }}
           transition={{
@@ -42,7 +42,7 @@ export function FinalCTADynamic() {
       ].map((particle, i) => (
         <motion.div
           key={i}
-          className="absolute w-1 h-1 bg-amber-400 dark:bg-amber-500 rounded-full"
+          className="absolute w-1 h-1 bg-[#CD853F] dark:bg-[#D4A574] rounded-full"
           style={{
             left: `${particle.left}%`,
             top: `${particle.top}%`,
@@ -98,10 +98,10 @@ export function FinalCTADynamic() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-12 py-6 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-gray-900 rounded-2xl font-semibold overflow-hidden shadow-2xl"
+              className="group relative px-12 py-6 bg-white text-gray-900 rounded-2xl font-semibold overflow-hidden shadow-2xl"
             >
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400"
+                className="absolute inset-0 bg-gradient-to-r from-gray-100 via-white to-gray-100"
                 animate={{
                   x: ['-100%', '100%'],
                 }}
@@ -119,7 +119,7 @@ export function FinalCTADynamic() {
               
               {/* Pulse effect */}
               <motion.div
-                className="absolute inset-0 rounded-2xl bg-amber-400"
+                className="absolute inset-0 rounded-2xl bg-white"
                 animate={{
                   scale: [1, 1.05, 1],
                   opacity: [0, 0.3, 0],
@@ -134,7 +134,7 @@ export function FinalCTADynamic() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-12 py-6 backdrop-blur-xl bg-white/10 border-2 border-amber-400/50 text-white rounded-2xl font-semibold hover:bg-amber-500/20 hover:border-amber-400 transition-all shadow-2xl text-lg"
+              className="px-12 py-6 backdrop-blur-xl bg-white/10 border-2 border-white/30 text-white rounded-2xl font-semibold hover:bg-white/20 hover:border-white/50 transition-all shadow-2xl text-lg"
             >
               Contactar a ventas
             </motion.button>

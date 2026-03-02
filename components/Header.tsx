@@ -59,7 +59,7 @@ export function Header({ isDark, setIsDark }: HeaderProps) {
               whileHover={{ scale: 1.05 }}
             >
               {item}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-amber-500 to-yellow-400 group-hover:w-full transition-all duration-300" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#B8860B] to-[#CD853F] group-hover:w-full transition-all duration-300" />
             </motion.button>
           ))}
         </nav>

@@ -46,7 +46,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
         ].map((particle, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-amber-400 dark:bg-amber-500 rounded-full opacity-20"
+            className="absolute w-1 h-1 bg-[#CD853F] dark:bg-[#D4A574] rounded-full opacity-25"
             style={{
               left: `${particle.left}%`,
               top: `${particle.top}%`,
@@ -67,7 +67,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
 
         {/* Atmospheric gradients */}
         <motion.div
-          className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-to-br from-gray-300/12 via-gray-200/6 to-transparent dark:from-gray-700/15 dark:via-gray-800/8 rounded-full blur-3xl"
+          className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-to-br from-[#B8860B]/8 via-[#CD853F]/4 to-transparent dark:from-[#B8860B]/12 dark:via-[#CD853F]/6 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.15, 1],
             x: [0, 40, 0],
@@ -113,7 +113,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 animate={{ rotate: 360 }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               >
-                <Sparkles className="w-5 h-5 text-amber-500 dark:text-amber-400" />
+                <Sparkles className="w-5 h-5 text-[#B8860B] dark:text-[#D4A574]" />
               </motion.div>
               <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
                 Tarjetas de Servicio Corporativas
@@ -187,10 +187,10 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative px-10 py-5 rounded-2xl backdrop-blur-xl bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 text-white font-semibold shadow-2xl overflow-hidden"
+                className="group relative px-10 py-5 rounded-2xl backdrop-blur-xl bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 text-white dark:text-gray-900 font-semibold shadow-2xl overflow-hidden"
               >
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700"
+                  className="absolute inset-0 bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-100 dark:to-white"
                   initial={{ x: '-100%' }}
                   whileHover={{ x: 0 }}
                   transition={{ duration: 0.3 }}
