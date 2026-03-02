@@ -17,8 +17,8 @@ const securityFeatures = [
   },
   {
     icon: FileCheck,
-    title: 'Auditoría',
-    description: 'Reportes detallados',
+    title: 'Reportes',
+    description: 'Informes detallados',
   },
   {
     icon: Server,
