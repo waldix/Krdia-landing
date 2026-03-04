@@ -10,11 +10,12 @@ interface HeroWithPhysicalCardProps {
 }
 
 export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLElement>(null);
   
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start start', 'end start'],
+    layoutEffect: false,
   });
 
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.9, 0.4]);
@@ -22,7 +23,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
   const cardY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
 
   return (
-    <section ref={containerRef} className="relative pt-32 pb-32 px-6 overflow-hidden min-h-screen flex items-center">
+    <section ref={containerRef} className="relative pt-32 pb-32 px-6 overflow-hidden min-h-screen flex items-center" style={{ position: 'relative' }}>
       {/* Clean background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Subtle grid */}
