@@ -2,22 +2,6 @@
 
 Landing page premium para Krdia, producto fintech B2B de dispersión de tarjetas corporativas. Diseño altamente dinámico con glassmorphism, degradados metálicos, animaciones avanzadas con Motion, y sistema de temas light/dark.
 
----
-
-## 🚨 IMPORTANTE: Si acabas de descargar desde Figma Make
-
-**El proyecto aparecerá con estructura incorrecta (archivos de Vite y carpeta `src/`)**
-
-### ✅ Solución en 1 comando:
-
-```bash
-chmod +x fix-structure.sh && ./fix-structure.sh && npm install && npm run dev
-```
-
-**📖 Más información**: Lee [LEER-PRIMERO.md](./LEER-PRIMERO.md) si tienes problemas.
-
----
-
 ## Stack Tecnológico
 
 - **Next.js 15** - Framework React para producción
@@ -60,13 +44,11 @@ chmod +x fix-structure.sh && ./fix-structure.sh && npm install && npm run dev
 │       └── useInView.tsx
 ├── public/               # Assets estáticos
 ├── next.config.js        # Configuración de Next.js
-├── tailwind.config.ts    # Configuración de Tailwind
+├── postcss.config.js     # Configuración de PostCSS
 └── tsconfig.json         # Configuración de TypeScript
 ```
 
 ## Instalación y Desarrollo
-
-> **⚠️ IMPORTANTE**: Si descargaste el código desde Figma Make y encuentras archivos de Vite o los archivos están en una carpeta `src/`, consulta [INSTRUCCIONES_DESCARGA.md](./INSTRUCCIONES_DESCARGA.md) para resolver el problema.
 
 ### Requisitos Previos
 
