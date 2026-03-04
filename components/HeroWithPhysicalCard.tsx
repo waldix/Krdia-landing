@@ -1,28 +1,16 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion } from 'motion/react';
 import { ArrowRight, Sparkles, MousePointer2 } from 'lucide-react';
 import { Card3DPhysical } from './Card3DPhysical';
-import { useRef } from 'react';
 
 interface HeroWithPhysicalCardProps {
   mousePosition: { x: number; y: number };
 }
 
 export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end start'],
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.9, 0.4]);
-  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '60%']);
-  const cardY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
-
   return (
-    <section ref={containerRef} className="relative pt-32 pb-32 px-6 overflow-hidden min-h-screen flex items-center">
+    <section className="relative pt-32 pb-32 px-6 overflow-hidden min-h-screen flex items-center">
       {/* Clean background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Subtle grid */}
@@ -101,7 +89,6 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
           {/* Left Column - Text Content */}
           <motion.div 
             className="space-y-10 lg:pr-8"
-            style={{ y: textY, opacity }}
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -230,7 +217,6 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
 
           {/* Right Column - VERTICAL Physical 3D Card (Complete, Not Cropped) */}
           <motion.div
-            style={{ y: cardY }}
             initial={{ opacity: 0, x: 80, scale: 0.9 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
