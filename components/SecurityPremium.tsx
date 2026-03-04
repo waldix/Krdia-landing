@@ -17,8 +17,8 @@ const securityFeatures = [
   },
   {
     icon: FileCheck,
-    title: 'Cumplimiento',
-    description: 'Regulación local',
+    title: 'Reportes',
+    description: 'Informes detallados',
   },
   {
     icon: Server,
@@ -74,7 +74,7 @@ export function SecurityPremium() {
             Seguridad y confianza
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400">
-            Infraestructura certificada y cumplimiento normativo garantizado
+            Infraestructura certificada con los más altos estándares
           </p>
         </motion.div>
 
@@ -136,9 +136,8 @@ export function SecurityPremium() {
             transition={{ delay: 0.6 }}
             className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed relative z-10"
           >
-            Krdia opera con los más altos estándares de seguridad de la industria financiera. 
-            Nuestra infraestructura está diseñada para proteger cada transacción y garantizar 
-            el cumplimiento de las regulaciones locales e internacionales.
+            Krdex opera con los más altos estándares de seguridad. 
+            Infraestructura diseñada para proteger cada transacción.
           </motion.p>
 
           {/* Glass reflection */}

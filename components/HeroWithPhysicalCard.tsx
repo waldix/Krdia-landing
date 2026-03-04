@@ -31,14 +31,25 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
           backgroundSize: '40px 40px',
         }} />
 
-        {/* Minimal floating particles */}
-        {[...Array(10)].map((_, i) => (
+        {/* Minimal floating particles - fixed positions to avoid hydration mismatch */}
+        {[
+          { left: 15, top: 20, duration: 7, delay: 0.5 },
+          { left: 85, top: 35, duration: 8, delay: 1.2 },
+          { left: 25, top: 70, duration: 6.5, delay: 0.8 },
+          { left: 70, top: 15, duration: 7.5, delay: 2.1 },
+          { left: 45, top: 85, duration: 8.5, delay: 1.5 },
+          { left: 90, top: 60, duration: 6, delay: 0.3 },
+          { left: 10, top: 45, duration: 7.2, delay: 2.5 },
+          { left: 55, top: 25, duration: 8.2, delay: 1.8 },
+          { left: 35, top: 55, duration: 6.8, delay: 0.9 },
+          { left: 75, top: 90, duration: 7.8, delay: 2.8 },
+        ].map((particle, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-gray-400 dark:bg-gray-600 rounded-full opacity-15"
+            className="absolute w-1 h-1 bg-[#CD853F] dark:bg-[#D4A574] rounded-full opacity-25"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${particle.left}%`,
+              top: `${particle.top}%`,
             }}
             animate={{
               y: [0, -40, 0],
@@ -46,17 +57,17 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               scale: [1, 1.5, 1],
             }}
             transition={{
-              duration: 6 + Math.random() * 3,
+              duration: particle.duration,
               repeat: Infinity,
               ease: 'easeInOut',
-              delay: Math.random() * 3,
+              delay: particle.delay,
             }}
           />
         ))}
 
         {/* Atmospheric gradients */}
         <motion.div
-          className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-to-br from-gray-300/12 via-gray-200/6 to-transparent dark:from-gray-700/15 dark:via-gray-800/8 rounded-full blur-3xl"
+          className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-to-br from-[#B8860B]/8 via-[#CD853F]/4 to-transparent dark:from-[#B8860B]/12 dark:via-[#CD853F]/6 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.15, 1],
             x: [0, 40, 0],
@@ -102,10 +113,10 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 animate={{ rotate: 360 }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               >
-                <Sparkles className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                <Sparkles className="w-5 h-5 text-[#B8860B] dark:text-[#D4A574]" />
               </motion.div>
               <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                Dispersión de Tarjetas B2B
+                Tarjetas de Servicio Corporativas
               </span>
             </motion.div>
             
@@ -130,7 +141,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                       backgroundSize: '200% 200%',
                     }}
                   >
-                    Dispersión
+                    Control total.
                   </motion.span>
                 </h1>
               </motion.div>
@@ -142,7 +153,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 transition={{ duration: 0.8, delay: 0.7 }}
               >
                 <span className="block bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400 bg-clip-text text-transparent">
-                  de tarjetas,
+                  Cero fricciones.
                 </span>
               </motion.h1>
 
@@ -153,7 +164,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
                 transition={{ duration: 0.8, delay: 0.9 }}
               >
                 <span className="bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-100 dark:to-white bg-clip-text text-transparent">
-                  sin fricción
+                  Una tarjeta.
                 </span>
               </motion.h2>
             </div>
@@ -164,8 +175,7 @@ export function HeroWithPhysicalCard({ mousePosition }: HeroWithPhysicalCardProp
               transition={{ duration: 0.8, delay: 1.1 }}
               className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed"
             >
-              Emite y distribuye tarjetas de forma ágil, segura y escalable. 
-              Control total para tu operación empresarial.
+              Tarjetas de servicio para empresas que quieren más control y menos complicaciones.
             </motion.p>
             
             <motion.div

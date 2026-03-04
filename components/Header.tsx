@@ -2,8 +2,8 @@
 
 import { Sun, Moon } from 'lucide-react';
 import { motion } from 'motion/react';
-import logoBlack from 'figma:asset/8e08f8e62548425109b6c90d1381d40cded9e69c.png';
-import logoWhite from 'figma:asset/926a13cb5bedd32726567b04d34dbe8a2b14fbfa.png';
+const logoBlack = '/images/logo-black.jpg';
+const logoWhite = '/images/logo-white.jpg';
 
 interface HeaderProps {
   isDark: boolean;
@@ -29,7 +29,7 @@ export function Header({ isDark, setIsDark }: HeaderProps) {
       }}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo oficial de Krdia - negro en light, blanco en dark */}
+        {/* Logo oficial de Krdex - negro en light, blanco en dark */}
         <motion.div 
           className="flex items-center"
           whileHover={{ scale: 1.03 }}
@@ -38,7 +38,7 @@ export function Header({ isDark, setIsDark }: HeaderProps) {
           <motion.img 
             key={isDark ? 'logo-white' : 'logo-black'}
             src={isDark ? logoWhite : logoBlack}
-            alt="Krdia"
+            alt="Krdex"
             className="h-8 w-auto select-none"
             draggable="false"
             initial={{ opacity: 0 }}
@@ -59,7 +59,7 @@ export function Header({ isDark, setIsDark }: HeaderProps) {
               whileHover={{ scale: 1.05 }}
             >
               {item}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gray-600 to-gray-400 dark:from-gray-400 dark:to-gray-600 group-hover:w-full transition-all duration-300" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#B8860B] to-[#CD853F] group-hover:w-full transition-all duration-300" />
             </motion.button>
           ))}
         </nav>

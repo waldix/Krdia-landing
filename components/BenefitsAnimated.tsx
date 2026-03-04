@@ -8,33 +8,33 @@ import { useState } from 'react';
 const benefits = [
   {
     icon: Zap,
-    title: 'Dispersión masiva',
-    description: 'Emite y distribuye miles de tarjetas de forma simultánea y automatizada.',
-    gradient: 'from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-800',
+    title: 'Gestión masiva',
+    description: 'Miles de tarjetas, una sola plataforma.',
+    gradient: 'from-[#B8860B] to-[#8B6914] dark:from-[#D4A574] dark:to-[#B8860B]',
   },
   {
     icon: Shield,
-    title: 'Control y trazabilidad',
-    description: 'Visibilidad completa de cada transacción y tarjeta en tiempo real.',
-    gradient: 'from-gray-400 to-gray-500 dark:from-gray-600 dark:to-gray-700',
+    title: 'Control total',
+    description: 'Visibilidad en tiempo real de cada consumo.',
+    gradient: 'from-gray-700 to-gray-900 dark:from-gray-600 dark:to-gray-800',
   },
   {
     icon: Plug,
-    title: 'Integración sencilla',
-    description: 'API REST moderna que se conecta fácilmente con tus sistemas existentes.',
-    gradient: 'from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900',
+    title: 'Fácil integración',
+    description: 'API moderna para conectar con tus sistemas.',
+    gradient: 'from-gray-800 to-gray-900 dark:from-gray-700 dark:to-gray-800',
   },
   {
     icon: Lock,
-    title: 'Seguridad y cumplimiento',
-    description: 'Infraestructura certificada con los más altos estándares de seguridad financiera.',
-    gradient: 'from-gray-500 to-gray-600 dark:from-gray-600 dark:to-gray-700',
+    title: 'Máxima seguridad',
+    description: 'Infraestructura con estándares empresariales.',
+    gradient: 'from-[#CD853F] to-[#8B6914] dark:from-[#D4A574] dark:to-[#B8860B]',
   },
   {
     icon: TrendingUp,
-    title: 'Escalabilidad',
-    description: 'Crece sin límites. Nuestra infraestructura se adapta a tu volumen de operación.',
-    gradient: 'from-gray-300 to-gray-500 dark:from-gray-700 dark:to-gray-800',
+    title: 'Escalable',
+    description: 'Crece sin límites con tu operación.',
+    gradient: 'from-gray-900 to-black dark:from-gray-700 dark:to-gray-900',
   },
 ];
 
@@ -98,7 +98,7 @@ function BenefitCard({ benefit, index }: { benefit: typeof benefits[0]; index: n
 
       {/* Floating particle */}
       <motion.div
-        className="absolute -top-2 -right-2 w-3 h-3 bg-gray-400 dark:bg-gray-600 rounded-full blur-sm"
+        className="absolute -top-2 -right-2 w-3 h-3 bg-[#B8860B] dark:bg-[#D4A574] rounded-full blur-sm"
         animate={{
           y: [0, -15, 0],
           opacity: [0.3, 0.8, 0.3],

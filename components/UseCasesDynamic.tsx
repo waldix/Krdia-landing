@@ -8,26 +8,26 @@ import { useRef } from 'react';
 const useCases = [
   {
     icon: Briefcase,
-    title: 'Nómina',
-    description: 'Dispersa pagos de nómina de forma puntual y segura a todos tus colaboradores.',
+    title: 'Gastos operativos',
+    description: 'Pagos del día a día con conciliación automática.',
     gradient: 'from-gray-300 via-gray-400 to-gray-500 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900',
   },
   {
     icon: Award,
-    title: 'Incentivos',
-    description: 'Implementa programas de bonos, comisiones y reconocimientos con tarjetas prepagadas.',
+    title: 'Beneficios',
+    description: 'Programas para colaboradores con control total.',
     gradient: 'from-gray-400 via-gray-500 to-gray-600 dark:from-gray-600 dark:via-gray-700 dark:to-gray-800',
   },
   {
     icon: Plane,
     title: 'Viáticos',
-    description: 'Gestiona gastos de viaje y viáticos con control total y reportes automáticos.',
+    description: 'Gastos de viaje con reportes automáticos.',
     gradient: 'from-gray-200 via-gray-300 to-gray-400 dark:from-gray-800 dark:via-gray-900 dark:to-black',
   },
   {
     icon: Building2,
-    title: 'Programas corporativos',
-    description: 'Beneficios para empleados, tarjetas de regalo y programas de fidelización empresarial.',
+    title: 'Consumos',
+    description: 'Centraliza gastos para mejor conciliación.',
     gradient: 'from-gray-500 via-gray-600 to-gray-700 dark:from-gray-600 dark:via-gray-700 dark:to-gray-800',
   },
 ];

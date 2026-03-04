@@ -18,11 +18,11 @@ export function FooterGlass() {
                 <span className="text-white dark:text-gray-900 font-bold text-lg">K</span>
               </div>
               <span className="text-xl font-semibold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent">
-                Krdia
+                Krdex
               </span>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Dispersión de tarjetas para empresas. Ágil, seguro, escalable.
+              Tarjetas de servicio para empresas. Administración ágil y segura.
             </p>
           </motion.div>
 
@@ -37,7 +37,7 @@ export function FooterGlass() {
             },
             {
               title: 'Legal',
-              links: ['Términos y condiciones', 'Privacidad', 'Cumplimiento'],
+              links: ['Términos y condiciones', 'Privacidad', 'Seguridad'],
             },
           ].map((section, index) => (
             <motion.div
@@ -69,10 +69,10 @@ export function FooterGlass() {
 
         <div className="pt-8 border-t border-gray-200/50 dark:border-gray-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            © 2026 Krdia. Todos los derechos reservados.
+            © 2026 Krdex. Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
-            {['LinkedIn', 'Twitter', 'contacto@krdia.tech'].map((item) => (
+            {['LinkedIn', 'Twitter', 'contacto@krdex.tech'].map((item) => (
               <motion.a
                 key={item}
                 href="#"
